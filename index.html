@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Review us</title>
+</head>
+
+<body>
+    <div class="flex fullbody">
+        <form action="" class="formdetails flex">
+            <span class="start">
+
+                <img id="formpic" alt="">
+                <input type="file" accept="image/*" name="profile" id="profile" onchange="loadFile()"
+                    style="display: none;">
+                <label for="profile" class="submitbutton" id="uploadani">Upload</label>
+            </span>
+            <label for="username">Name <b>*</b></label>
+            <input type="text" id="username" onkeyup="loadtext(event)" required>
+            <label for="useremail">Mail id:</label>
+            <input type="email" id="useremail" onkeyup="loadmail()" required>
+
+            <label for="userreview">Review</label>
+
+            <textarea id="userreview" name="w3review" onkeyup="loadreview()" rows="4" cols="50">
+            </textarea>
+
+            <label for="usercomments">Comments</label>
+            <input type="text" id="usercomments" onkeyup="loadcomment()" required>
+
+            <label for="rating">Ratings</label>
+            <span id="rating">
+                <span class="fa fa-star " onclick="ones()" id="onestar"></span><span class="fa fa-star "
+                    onclick="twos()" id="twostar"></span>
+                <span class="fa fa-star" onclick="threes()" id="threestar"></span>
+                <span class="fa fa-star" onclick="fours()" id="fourstar"></span>
+                <span class="fa fa-star" onclick="fives()" id="fivestar"></span>
+            </span>
+            <button type="submit" class="submitbutton">Submit</button>
+        </form>
+        <div class="flex " style="flex-direction: column;">
+            <div class="profile">
+
+                <span class="start">
+                    <img id="profilepic" alt="">
+                    <label for="userpreview">Name</label>
+                    <p id="userpreview"> </p>
+                </span>
+                <span>
+                    <label for="useremailpreview">Mail id</label>
+                    <p id="useremailpreview"></p>
+                </span>
+                <span>
+                    <label for="userreviewpreview">Review</label>
+                    <p id="userreviewpreview"></p>
+                </span>
+                <span>
+                    <label for="usercommentspreview">Comment</label>
+                    <p id="usercommentspreview"></p>
+                </span>
+            </div>
+            <div class="last-img " >
+                <img src="images/form.svg" class="form-img" alt="">
+            </div>
+                
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
