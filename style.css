@@ -8,7 +8,7 @@ html{
     overflow-x: hidden;
 }
 body{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Exo 2', sans-serif;
     background-color: rgb(252, 252, 250);
 }
 .centerit{
@@ -30,8 +30,11 @@ body{
     width: 8rem;
     border-radius: 50%;
     border: solid 1px;
+    
 }
-
+.padding{
+    margin: 25px;
+}
 .submitbutton{
     padding:10px;
     width: 8rem;
@@ -54,6 +57,7 @@ img{
     flex-direction: column;
     border-radius: 1rem;
     border: solid 1px ;
+    box-shadow: 0px 1px 10px #aca8a8;
 }
 textarea{
     outline: none;
@@ -101,9 +105,6 @@ label{
     display: flex;
     
 }
-.margin{
-margin:25px;
-}
 input{
     border: none;
     outline: none;
@@ -126,16 +127,36 @@ width: min-content;
 }
 #uploadani{
     position: relative;
-    animation: up 1s infinite;
+    
 }
 .form-img{
-    
+    box-shadow: 10px 1px 10px #aca8a8;
     width: 28rem;
 }
 .last-img{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+.text-align{
+    text-align: center;
+}
+.special-live{
+    /* background-color: red; */
+    border: solid 1px black;
+    width: min-content;
+    text-align: center;
+    padding: 10px;
+    border-radius:15px 0px 25px 2px;
+}
+.dot{
+    height: 8px;
+    width: 8px;
+    border-radius:50% ;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    animation: up 2s infinite;
 }
 @keyframes flow {
     from{
@@ -146,7 +167,15 @@ width: min-content;
     
     }
 }
-
+@keyframes up {
+    from{
+      transform: scale(1);
+    }
+    to{
+        transform: scale(2);
+    
+    }
+}
 
 @media screen and  (max-width:768px) {
     .flex{
@@ -186,7 +215,7 @@ width: min-content;
     }
     #profilepic{
         width: 11rem;
-        margin: 5px;
+    
     }
     .form-img{
         width: 100%;
