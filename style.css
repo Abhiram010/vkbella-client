@@ -101,6 +101,9 @@ label{
     display: flex;
     
 }
+.margin{
+margin:25px;
+}
 input{
     border: none;
     outline: none;
@@ -182,8 +185,8 @@ width: min-content;
         margin: 0;
     }
     #profilepic{
-        width: 8rem;
-        margin: 10px;
+        width: 11rem;
+        margin: 5px;
     }
     .form-img{
         width: 100%;
