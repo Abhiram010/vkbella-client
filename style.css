@@ -97,6 +97,7 @@ p{
     animation-name:flow ;
     animation-duration: 1s ;
     animation-iteration-count: infinite;
+  width: 95%;   
 }
 .formdetails{
     flex-basis: 30%;
