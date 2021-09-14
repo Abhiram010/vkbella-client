@@ -168,6 +168,8 @@ width: min-content;
 .special-live{
     border: solid 1px black;
     width: max-content;
+    border-top: none;
+    border-left: none;
     text-align: center;
     padding: 10px;
     border-radius:15px 0px 25px 2px;
