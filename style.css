@@ -177,6 +177,12 @@ width: min-content;
     width: min-content;
     min-width: 10rem;
 }
+.posi{
+    position: -webkit-sticky; /* Safari & IE */
+position: sticky;
+top: 0;
+z-index: 1;
+}
 @keyframes flow {
     from{
         background:linear-gradient(45deg, rgb(204, 201, 201),rgb(221, 218, 218));
@@ -205,7 +211,7 @@ width: min-content;
     }
     .formdetails,.profile{
         width: 100%;
-        margin: 1rem 0rem;
+        margin: 10px 0px;
     }
     
     span{
@@ -232,7 +238,7 @@ width: min-content;
         width: inherit;
         margin: 0;
     }
-    #profilepic{
+    #profilepic,#formpic{
         width: 11rem;
     
     }
