@@ -17,25 +17,34 @@
     <h1 class="text-align"> Review Form</h1>
     <div class="flex fullbody">
         <form action="" class="formdetails flex">
+            <span class="logopic">
+
+                <img src="images/logo.png" class="logo" alt="">
+            </span>
+            <h2 class="start-info">
+                Can You Please Leave Us a Review?
+
+
+            </h2>
+            <h4 class="start-info">
+                Please describe in detail your experience with our organization, thanks so much!
+            </h4>
             <span class="start">
 
                 <img id="formpic" alt="">
                 <input type="file" accept="image/*" name="profile" id="profile" onchange="loadFile()"
                     style="display: none;">
-                <label for="profile" class="submitbutton" id="uploadani">Upload</label>
+                    <span style="display: flex; flex-direction: column;">
+
+                        <label for="profile" class="submitbutton" id="uploadani">Upload</label>
+                        <label  id="uploadani">Verify with <i class="fa fa-facebook-f" style="font-size: 18px; margin: 5px; padding:5px;border: solid 1px rgb(74, 74, 250); border-radius: 3px; color: rgb(74, 74, 250);"></i></label>
+                    </span>
             </span>
+            
             <label for="username">Name <b>*</b></label>
             <input type="text" id="username" onkeyup="loadtext(event)" required>
             <label for="useremail">Mail id:</label>
             <input type="email" id="useremail" onkeyup="loadmail()" required>
-
-            <label for="userreview">Review</label>
-
-            <textarea id="userreview" name="w3review" onkeyup="loadreview()" rows="4" cols="50">
-            </textarea>
-
-            <label for="usercomments">Comments</label>
-            <input type="text" id="usercomments" onkeyup="loadcomment()" required>
 
             <label for="rating">Ratings</label>
             <span id="rating">
@@ -45,9 +54,17 @@
                 <span class="fa fa-star" onclick="fours()" id="fourstar"></span>
                 <span class="fa fa-star" onclick="fives()" id="fivestar"></span>
             </span>
+            <label for="userreview">Review</label>
+
+            <textarea id="userreview" name="w3review" onkeyup="loadreview()" rows="4" cols="50">
+            </textarea>
+
+            <label for="usercomments">Comments</label>
+            <input type="text" id="usercomments" onkeyup="loadcomment()" required>
+
             <button type="submit" class="submitbutton">Submit</button>
         </form>
-        <div class="flex " style="flex-direction: column;">
+        <div class="flex posi" style="flex-direction: column;">
             
             <div class="profile">
                 <span>
@@ -55,13 +72,29 @@
                     <h2 class="text-align special-live"><div class="dot"></div>  Live preview</h2>
                 </span>
                 <span class="start">
+                    
                     <img id="profilepic" alt="">
-                    <label for="userpreview">Name</label>
-                    <p id="userpreview"> </p>
-                </span>
-                <span>
-                    <label for="useremailpreview">Mail id</label>
-                    <p id="useremailpreview"></p>
+                    <span class="themail">
+
+                        <span>
+    
+    
+                            <label for="userpreview">Name</label>
+                            <p id="userpreview"> </p>
+                        </span>
+                        <span>
+                            <label for="useremailpreview">Mail id</label>
+                            <p id="useremailpreview"></p>
+                        </span>
+                        <!-- <label for="rating">Ratings</label> -->
+            <span id="rating">
+                <span class="fa fa-star " id="prevonestar"></span>
+                <span class="fa fa-star " id="prevtwostar"></span>
+                <span class="fa fa-star"  id="prevthreestar"></span>
+                <span class="fa fa-star" id="prevfourstar"></span>
+                <span class="fa fa-star" id="prevfivestar"></span>
+            </span>
+                    </span>
                 </span>
                 <span>
                     <label for="userreviewpreview">Review</label>
