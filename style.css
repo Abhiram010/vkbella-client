@@ -113,6 +113,10 @@ label{
 #rating{
     padding: 10px;
 }
+#userpreview{
+    width: min-content;
+min-width: 10rem;
+}
 .profile{
     flex-basis: 40%;
     justify-content: flex-start;
