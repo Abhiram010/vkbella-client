@@ -90,14 +90,13 @@ textarea{
 
 p{
     background:linear-gradient(45deg, rgb(204, 201, 201),rgb(221, 218, 218));
-    width: 40rem;
+    width: 25rem;
     margin: 10px;
     word-wrap: break-word;
     border-radius: 10px;
     animation-name:flow ;
     animation-duration: 1s ;
-    animation-iteration-count: infinite;
-  width: 95%;   
+    animation-iteration-count: infinite;   
 }
 .formdetails{
     flex-basis: 30%;
