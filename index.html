@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <h1 class="text-align"> Review Form</h1>
+    <h1 class="text-align" style="margin: 10px;"> Review Form</h1>
     <div class="flex fullbody">
         <form action="" class="formdetails flex">
             <span class="logopic">
@@ -31,12 +31,12 @@
             </h4>
             <span class="start">
 
-                <img id="formpic" alt="">
+                <img id="formpic" src="images/user.jpg"  alt="">
                 <input type="file" accept="image/*" name="profile" id="profile" onchange="loadFile()"
                     style="display: none;">
-                    <span style="display: flex; flex-direction: column;margin:12px">
+                    <span style="display: flex; flex-direction: column;margin: 10px;">
 
-                        <label for="profile" class="submitbutton" id="uploadani">Upload</label>
+                        <label for="profile" class="submitbutton" id="uploadani">Upload picture</label>
                         <label  id="uploadani">Verify with <i class="fa fa-facebook-f" style="font-size: 18px; margin: 5px; padding:5px;border: solid 1px rgb(74, 74, 250); border-radius: 3px; color: rgb(74, 74, 250);"></i></label>
                     </span>
             </span>
@@ -56,11 +56,11 @@
             </span>
             <label for="userreview">Review</label>
 
-            <textarea id="userreview" name="w3review" onkeyup="loadreview()" rows="4" cols="50">
+            <textarea id="userreview" name="review" onkeyup="loadreview()" rows="4" cols="50">
             </textarea>
 
             <label for="usercomments">Comments</label>
-            <input type="text" id="usercomments" onkeyup="loadcomment()" required>
+            <input type="text" id="usercomments" onkeyup="loadcomment()"  required>
 
             <button type="submit" class="submitbutton margin">Submit</button>
         </form>
@@ -86,7 +86,6 @@
                             <label for="useremailpreview">Mail id</label>
                             <p id="useremailpreview"></p>
                         </span>
-                        <!-- <label for="rating">Ratings</label> -->
             <span id="rating">
                 <span class="fa fa-star " id="prevonestar"></span>
                 <span class="fa fa-star " id="prevtwostar"></span>
