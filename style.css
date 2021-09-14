@@ -177,6 +177,7 @@ width: min-content;
     width: 8px;
     border-radius:50% ;
     display: inline-block;
+    margin:10px;
     background-color: rgb(242, 108, 108);
     animation: up 2s infinite;
 }
