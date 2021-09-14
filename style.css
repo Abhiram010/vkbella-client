@@ -14,10 +14,19 @@ body{
 .centerit{
     text-align: center;
 }
+.start-info{
+    text-align: center;
+    padding: 10px 0px;
+}
 .start{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex-direction: column; */
+}
+.themail{
+    display:flex;
+    flex-direction: column;
 }
 .flex{
     display: flex;
@@ -44,7 +53,7 @@ body{
     border-radius: 25px;
 }
 img{
-    margin: 1rem;
+    margin: 10px;
 }
 .fullbody{
     align-items: flex-start;
@@ -66,10 +75,16 @@ textarea{
     width: min-content;
     margin: 10px;
 }
-img{
-
-    box-shadow: 0px 1px 10px #aca8a8;
+.logopic{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.logo{
+    align-items: center;
+}
+
 p{
     background:linear-gradient(45deg, rgb(204, 201, 201),rgb(221, 218, 218));
     width: 40rem;
@@ -100,6 +115,7 @@ label{
     justify-content: flex-start;
     align-items: flex-start;
     margin: 3rem 3rem 0rem 1rem;
+    
 }
 .instyle{
     display: flex;
@@ -116,11 +132,11 @@ input{
 }
 p{
     padding: 15px;
-    margin: 1rem;
+    margin: 5px;
 
 }
 .profile span label{
-    margin: 10px;
+    margin:5px;
 }
 #userpreview{
 width: min-content;
@@ -130,7 +146,7 @@ width: min-content;
     
 }
 .form-img{
-   
+    box-shadow: 10px 1px 10px #aca8a8;
     width: 28rem;
 }
 .last-img{
@@ -143,9 +159,8 @@ width: min-content;
     text-align: center;
 }
 .special-live{
-    /* background-color: red; */
     border: solid 1px black;
-    width: min-content;
+    width: max-content;
     text-align: center;
     padding: 10px;
     border-radius:15px 0px 25px 2px;
@@ -155,8 +170,12 @@ width: min-content;
     width: 8px;
     border-radius:50% ;
     display: inline-block;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(242, 108, 108);
     animation: up 2s infinite;
+}
+#useremailpreview{
+    width: min-content;
+    min-width: 10rem;
 }
 @keyframes flow {
     from{
