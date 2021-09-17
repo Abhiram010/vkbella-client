@@ -209,6 +209,9 @@ z-index: 1;
     
   
   }
+#profilepic{
+margin:10px
+}
   .profile{
       width: 30rem;
       padding: 0px 10px 10px 0px;
