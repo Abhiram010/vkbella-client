@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
     <title>Review us</title>
 </head>
 
@@ -22,25 +22,23 @@
                 <img src="images/logo.png" class="logo" alt="">
             </span>
             <h2 class="start-info">
-                Can You Please Leave Us a Review?
-
-
-            </h2>
+                Can You Please Leave Us a Review?</h2>
             <h4 class="start-info">
                 Please describe in detail your experience with our organization, thanks so much!
             </h4>
             <span class="start">
 
-                <img id="formpic" src="images/user.jpg"  alt="">
+                <img id="formpic" src="images/user.jpg" alt="">
                 <input type="file" accept="image/*" name="profile" id="profile" onchange="loadFile()"
                     style="display: none;">
-                    <span style="display: flex; flex-direction: column;margin: 10px;">
+                <span style="display: flex; flex-direction: column;margin: 10px;">
 
-                        <label for="profile" class="submitbutton" id="uploadani">Upload picture</label>
-                        <label  id="uploadani">Verify with <i class="fa fa-facebook-f" style="font-size: 18px; margin: 5px; padding:5px;border: solid 1px rgb(74, 74, 250); border-radius: 3px; color: rgb(74, 74, 250);"></i></label>
-                    </span>
+                    <label for="profile" class="submitbutton" id="uploadani">Upload picture</label>
+                    <label id="uploadani">Verify with <i class="fa fa-facebook-f"
+                            style="font-size: 18px; margin: 5px; padding:5px;border: solid 1px rgb(74, 74, 250); border-radius: 3px; color: rgb(74, 74, 250);"></i></label>
+                </span>
             </span>
-            
+
             <label for="username">Name <b>*</b></label>
             <input type="text" id="username" onkeyup="loadtext(event)" required>
             <label for="useremail">Mail id:</label>
@@ -48,67 +46,87 @@
 
             <label for="rating">Ratings</label>
             <span id="rating">
-                <span class="fa fa-star " onclick="ones()" id="onestar"></span><span class="fa fa-star "
+                <span class="fa fa-star fa-2x" onclick="ones()" id="onestar"></span><span class="fa fa-star fa-2x"
                     onclick="twos()" id="twostar"></span>
-                <span class="fa fa-star" onclick="threes()" id="threestar"></span>
-                <span class="fa fa-star" onclick="fours()" id="fourstar"></span>
-                <span class="fa fa-star" onclick="fives()" id="fivestar"></span>
+                <span class="fa fa-star fa-2x" onclick="threes()" id="threestar"></span>
+                <span class="fa fa-star fa-2x" onclick="fours()" id="fourstar"></span>
+                <span class="fa fa-star fa-2x" onclick="fives()" id="fivestar"></span>
             </span>
             <label for="userreview">Review</label>
 
             <textarea id="userreview" name="review" onkeyup="loadreview()" rows="4" cols="50">
             </textarea>
 
+            <span id="posreview">
+            <label class="dytextpos"for="dyuserreview">Will do you us a favour</label>
+            <p class="dytextpos">Your review has been copied to your clipboard. if you would be graciously willing. could share your experince with other people like yourself pasting your review in the directory listed below? It's great way to help other people like yourself and we would apperciate it!</p>
+            <textarea id="dyuserreview" name="review" onkeyup="loadreview()" rows="4" cols="50">
+            </textarea>
+            <span class="flexi">
+                <i class="fa fa-facebook-f fa-2x"
+                            style="font-size: 18px; margin: 5px; padding:5px;border: solid 1px rgb(74, 74, 250); border-radius: 3px; color: rgb(74, 74, 250);"></i>
+                            <i class="fa fa-facebook-f"
+                            style="font-size: 18px; margin: 5px; padding:5px;border: solid 1px rgb(74, 74, 250); border-radius: 3px; color: rgb(74, 74, 250);"></i>
+            </span>
+            </span>
+            
+            <span id="negreview">
+            <label for="dyuserreviewneg">Please provide your Feedback</label>
+            <p >Thank you so much for your review, are there any specific comments or feedback that you would like to send to management regrading your experince, and how we could have improved your experince and your review of us?</p>
+            <textarea  name="dyuserreviewneg" onkeyup="loadreview()" rows="4" cols="50">
+            </textarea>
+            </span>
+
+
             <label for="usercomments">Comments</label>
-            <input type="text" id="usercomments" onkeyup="loadcomment()"  required>
+            <input type="text" id="usercomments" onkeyup="loadcomment()" required>
 
             <button type="submit" class="submitbutton margin">Submit</button>
         </form>
         <div class="flex posi" style="flex-direction: column;">
-            
+
             <div class="profile">
                 <span>
-                    
-                    <h2 class="text-align special-live"><div class="dot"></div>Preview</h2>
+
+                    <h2 class="text-align special-live">
+                        <div class="dot"></div>Preview
+                    </h2>
                 </span>
                 <span class="start">
-                    
+
                     <img id="profilepic" alt="">
                     <span class="themail">
-
                         <span>
-    
-    
                             <label for="userpreview">Name</label>
-                            <p id="userpreview"> </p>
+                            <p class="load" id="userpreview"> </p>
                         </span>
                         <span>
                             <label for="useremailpreview">Mail id</label>
-                            <p id="useremailpreview"></p>
+                            <p class="load" id="useremailpreview"></p>
                         </span>
-            <span id="rating">
-                <span class="fa fa-star " id="prevonestar"></span>
-                <span class="fa fa-star " id="prevtwostar"></span>
-                <span class="fa fa-star"  id="prevthreestar"></span>
-                <span class="fa fa-star" id="prevfourstar"></span>
-                <span class="fa fa-star" id="prevfivestar"></span>
-            </span>
+                        <span id="rating">
+                            <span class="fa fa-star fa-2x" id="prevonestar"></span>
+                            <span class="fa fa-star fa-2x" id="prevtwostar"></span>
+                            <span class="fa fa-star fa-2x" id="prevthreestar"></span>
+                            <span class="fa fa-star fa-2x" id="prevfourstar"></span>
+                            <span class="fa fa-star fa-2x" id="prevfivestar"></span>
+                        </span>
                     </span>
                 </span>
                 <span>
                     <label for="userreviewpreview">Review</label>
-                    <p id="userreviewpreview"></p>
+                    <p class="load"id="userreviewpreview"></p>
                 </span>
                 <span>
                     <label for="usercommentspreview">Comment</label>
-                    <p id="usercommentspreview"></p>
+                    <p class="load" id="usercommentspreview"></p>
                 </span>
                 <button type="submit" class="submitbutton padding">Submit</button>
             </div>
-            <div class="last-img " >
+            <div class="last-img ">
                 <img src="images/form.svg" class="form-img" alt="">
             </div>
-                
+
         </div>
 
     </div>
