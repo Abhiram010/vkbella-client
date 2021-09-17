@@ -158,7 +158,8 @@ width: min-content;
     
 }
 .form-img{
-    box-shadow: 10px 1px 10px #aca8a8;
+    /*box-shadow: 10px 1px 10px #aca8a8;*/
+    
     width: 28rem;
 }
 .last-img{
