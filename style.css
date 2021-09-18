@@ -282,9 +282,8 @@ margin:10px
     }
   
     #profilepic{
-        /*width: 12rem;*/
-        
-      
+       width: 12rem;
+        max-width:auto;
       }
     .form-img{
         width: 100%;
