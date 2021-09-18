@@ -5,6 +5,7 @@ var loadFile = function () {
     formimg.src = URL.createObjectURL(event.target.files[0]);
     img.style.border="solid 1px ";
     formimg.style.border="solid 1px";
+    forming.style.width="auto";
 }
 var loadtext = function () {
 
