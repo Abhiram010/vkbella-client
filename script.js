@@ -80,6 +80,10 @@ function ones() {
     prevthrees.style.color = "black";
     prevfours.style.color = "black";
     prevfives.style.color = "black";
+var rev = document.getElementById('negreview');
+    var revtwo = document.getElementById('posreview');
+    revtwo.style.display="none";
+    rev.style.display="block";
 }
 
 function twos() {
@@ -139,6 +143,10 @@ function threes() {
     prevthrees.style.color = "orange";
     prevfours.style.color = "black";
     prevfives.style.color = "black";
+  var rev = document.getElementById('negreview');
+    var revtwo = document.getElementById('posreview');
+    revtwo.style.display="none";
+    rev.style.display="block";
 }
 
 function fours() {
@@ -171,6 +179,10 @@ function fours() {
     prevthrees.style.color = "orange";
     prevfours.style.color = "orange";
     prevfives.style.color = "black";
+var rev = document.getElementById('negreview');
+    var revtwo = document.getElementById('posreview');
+    revtwo.style.display="block";
+    rev.style.display="none";
 }
 
 function fives() {
