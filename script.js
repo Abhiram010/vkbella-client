@@ -1,3 +1,5 @@
+let count = 0;
+
 var loadFile = function () {
     var img = document.getElementById('profilepic');
     var formimg = document.getElementById('formpic');
@@ -66,10 +68,7 @@ function ones() {
     var prevfours = document.getElementById('prevfourstar');
     var prevfives = document.getElementById('prevfivestar');
     var ones = document.getElementById('onestar');
-    var rev = document.getElementById('negreview');
-    var revtwo = document.getElementById('posreview');
-    revtwo.style.display="none";
-    rev.style.display="none";
+
     ones.style.color = "orange";
     twos.style.color = "black";
     threes.style.color = "black";
@@ -80,10 +79,6 @@ function ones() {
     prevthrees.style.color = "black";
     prevfours.style.color = "black";
     prevfives.style.color = "black";
-var rev = document.getElementById('negreview');
-    var revtwo = document.getElementById('posreview');
-    revtwo.style.display="none";
-    rev.style.display="block";
 }
 
 function twos() {
@@ -100,10 +95,6 @@ function twos() {
     var prevfives = document.getElementById('prevfivestar');
     ones.style.color = "orange";
     var twos = document.getElementById('twostar');
-    var rev = document.getElementById('negreview');
-    var revtwo = document.getElementById('posreview');
-    revtwo.style.display="none";
-    rev.style.display="block";
     twos.style.color = "orange";
     threes.style.color = "black";
     fours.style.color = "black";
@@ -127,11 +118,7 @@ function threes() {
     var prevthrees = document.getElementById('prevthreestar');
     var prevfours = document.getElementById('prevfourstar');
     var prevfives = document.getElementById('prevfivestar');
-    var rev = document.getElementById('negreview');
-    var revtwo = document.getElementById('posreview');
-    revtwo.style.display="none";
-    rev.style.display="none";
-    ones.style.color = "orange";
+        ones.style.color = "orange";
     var twos = document.getElementById('twostar');
     twos.style.color = "orange";
     var threes = document.getElementById('threestar');
@@ -143,10 +130,6 @@ function threes() {
     prevthrees.style.color = "orange";
     prevfours.style.color = "black";
     prevfives.style.color = "black";
-  var rev = document.getElementById('negreview');
-    var revtwo = document.getElementById('posreview');
-    revtwo.style.display="none";
-    rev.style.display="block";
 }
 
 function fours() {
@@ -162,10 +145,6 @@ function fours() {
     var prevthrees = document.getElementById('prevthreestar');
     var prevfours = document.getElementById('prevfourstar');
     var prevfives = document.getElementById('prevfivestar');
-    var rev = document.getElementById('negreview');
-    var revtwo = document.getElementById('posreview');
-    revtwo.style.display="none";
-    rev.style.display="none";
     ones.style.color = "orange";
     var twos = document.getElementById('twostar');
     twos.style.color = "orange";
@@ -179,13 +158,9 @@ function fours() {
     prevthrees.style.color = "orange";
     prevfours.style.color = "orange";
     prevfives.style.color = "black";
-var rev = document.getElementById('negreview');
-    var revtwo = document.getElementById('posreview');
-    revtwo.style.display="block";
-    rev.style.display="none";
 }
 
-function fives() {
+function  fives() {
     var prevones = document.getElementById('prevonestar');
     var prevtwos = document.getElementById('prevtwostar');
     var prevthrees = document.getElementById('prevthreestar');
@@ -197,10 +172,7 @@ function fives() {
     var threes = document.getElementById('threestar');
     var fours = document.getElementById('fourstar');
     var fives = document.getElementById('fivestar');
-    var rev = document.getElementById('negreview');
-    var revtwo = document.getElementById('posreview');
-    revtwo.style.display="block";
-    rev.style.display="none";
+
     ones.style.color = "orange";
     twos.style.color = "orange";
 
@@ -214,4 +186,5 @@ function fives() {
     prevthrees.style.color = "orange";
     prevfours.style.color = "orange";
     prevfives.style.color = "orange";
+
 }
