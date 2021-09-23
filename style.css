@@ -273,6 +273,9 @@ margin:10px
   flex-direction: column;
   padding: 10px;
 }
+.posi{
+    padding:0px 10px;
+}
 #uploadan{
   padding: 0px;
   align-items: center;
