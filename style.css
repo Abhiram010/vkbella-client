@@ -278,12 +278,7 @@ margin:10px
   padding: 0px;
   align-items: center;
 }
-    .flexi{
-        flex-direction: column;
-        width: 100vw;
-        justify-content: center;
-        align-items: center;
-    }
+   
     .flex{
       flex-direction: column;
       width: 100vw;
@@ -291,7 +286,7 @@ margin:10px
       align-items: flex-start;
     }
     .formdetails,.profile{
-        width: 97%;
+        width: 97vw;
         margin: 10px 0px;
         border: solid rgb(32,32,32) 3px;
     }
