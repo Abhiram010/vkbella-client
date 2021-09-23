@@ -12,7 +12,7 @@ body{
 
 }
 .formdetails{
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1); 
 }
 .centerit{
     text-align: center;
@@ -270,9 +270,8 @@ margin:10px
 @media screen and  (max-width:768px) {
 .fullbody{
   display: flex;
-  flex-direction: column;:
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  padding: 10px;
 }
 #uploadan{
   padding: 0px;
@@ -373,5 +372,5 @@ textarea{
 }
 
 :root {
-  color-scheme: light dark; /* both supported */
-} */
+  color-scheme: light dark; /* both supported} */
+
