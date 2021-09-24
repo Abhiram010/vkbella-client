@@ -194,6 +194,7 @@ input {
     align-items: center;
     justify-content: center;
     flex-basis: 40%;
+    margin: 1rem;
 }
 
 .profile span label {
