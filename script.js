@@ -184,5 +184,4 @@ function fives() {
   prevthrees.style.color = "orange";
   prevfours.style.color = "orange";
   prevfives.style.color = "orange";
-
 }
