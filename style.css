@@ -34,9 +34,9 @@ body {
 
 #formpic, #profilepic {
     border-radius: 50%;
-    width: rem;
+    width: 8rem;
     margin: 10px 1rem;
-    height: 10rem;
+    height: 8rem;
 }
 
 .themail {
