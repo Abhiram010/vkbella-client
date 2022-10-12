@@ -5,6 +5,7 @@ var loadFile = function() {
   var formimg = document.getElementById('formpic');
   img.src = URL.createObjectURL(event.target.files[0]);
   formimg.src = URL.createObjectURL(event.target.files[0]);
+  console.log(forming.src);
   
 }
 var loadtext = function() {
